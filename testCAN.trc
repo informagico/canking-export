@@ -1,0 +1,28 @@
+;$FILEVERSION=1.1
+;$STARTTIME=44104.46480324074
+;
+;   Columns description:
+;   ~~~~~~~~~~~~~~~~~~~~~
+;   +-Message Number
+;   |          +Time offset (ms)
+;   |          |        +Type
+;   |          |        |        +ID (hex)
+;   |          |        |        |     +Data Length Code
+;   |          |        |        |     |   +Data bytes (hex)
+;   |          |        |        |     |   |
+;---+---   ----+----  --+--  ----+---  +  -+ -- -- -- -- -- -- --
+      1)         0.0  Rx     0CF00400  8  FF FF FF 58 58 FF F3 FF 
+      2)         0.6  Rx     0CFF1700  8  2A 2A 46 10 59 FC 2A FF 
+      3)         0.6  Rx     18FF1F00  8  00 00 00 00 00 FF FF 01 
+      4)         2.9  Rx     0C000028  8  FD 10 59 00 FE FF FF FF 
+      5)         6.7  Rx     18FEF200  8  5F 00 FF FF FF FF 07 FF 
+      6)         0.6  Rx     0CFEA400  8  FF FF FF FF 59 8B 11 35 
+      7)         0.6  Rx     0CFF0C00  8  FF 00 00 00 FF FF FF FF 
+      8)         0.6  Rx     18FEF600  8  C5 FF 95 47 FF FF FF FF 
+      9)         0.5  Rx     18FF0100  8  18 75 26 75 CF 05 32 FF 
+     10)         0.6  Rx     18FF1100  8  04 00 01 00 04 00 00 00 
+     11)         0.6  Rx     18FF0B00  8  01 00 10 00 FF FF FF FF 
+     12)         0.6  Rx     18FF2200  8  E0 47 C0 47 14 00 FF FF 
+     13)         0.5  Rx     18FF0E00  8  FC 03 92 04 E8 03 E8 03 
+     14)         0.6  Rx     18FF2700  8  02 00 00 02 FF FF FF FF 
+     15)         0.6  Rx     18FD9200  8  F4 FF FF FF FF FF FF FF 
