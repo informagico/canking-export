@@ -207,16 +207,20 @@ if __name__ == "__main__":
         sys.exit()
     else:
         fName = sys.argv[1]
+    
+    convertTrc = False
 
-    #UnixModTime = os.path.getmtime(fName)
-    #print("Last modified: %s" % time.ctime(os.path.getmtime(fName)))
-
+    if len(sys.argv) == 3:
+        if sys.argv[2] == "-trc":
+            convertTrc = True
+    
     with open(fName) as f:
         lines = f.readlines()
         print(f"Read {len(lines)} lines from file {fName}")
-        #print(lines[0:2])
 
     asc_canlines, trc_canlines = parse_lines(lines)
 
     write_asc(fName, asc_canlines)
-    write_trc(fName, trc_canlines)
+    
+    if convertTrc:
+        write_trc(fName, trc_canlines)
